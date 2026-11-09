@@ -4,7 +4,7 @@ Windows 选区朗读工具，支持 MiMo 和 Fish Audio 云端语音合成。Clo
 
 ## 安装与使用
 
-下载发行页的 `QingDu-v0.2.5-windows-x64.zip`，完整解压后运行 `Install.cmd`。程序需要 Windows 10/11 x64、.NET Framework 4.7.2 或更新版本，以及可访问所选云服务的网络。运行包已包含音频组件，无需 Python、CUDA 或模型文件。安装程序无需管理员权限，安装到当前用户的 `%LOCALAPPDATA%\Programs\QingDu`。
+下载发行页的 `QingDu-v0.2.6-windows-x64.zip`，完整解压后运行 `Install.cmd`。程序需要 Windows 10/11 x64、.NET Framework 4.7.2 或更新版本，以及可访问所选云服务的网络。运行包已包含音频组件，无需 Python、CUDA 或模型文件。安装程序无需管理员权限，安装到当前用户的 `%LOCALAPPDATA%\Programs\QingDu`。
 
 打开“服务设置”，在本机填写自己的 API Key。默认 MiMo／冰糖，MiMo 提供默认音色、冰糖、茉莉、苏打、白桦、Mia、Chloe、Milo、Dean 共9个预设项。Fish 默认使用免费模型，音色列表为空，请添加官方音色页面链接或 ID。
 
@@ -42,4 +42,4 @@ bash scripts/build-media.sh "$PWD/build/media-work"
 
 项目采用GPL-3.0，完整许可见LICENSE。随发行交付FFmpeg和Rubber Band的对应源码、构建脚本与第三方声明。未进行代码签名。验证范围见 `VALIDATION.md`。
 
-版本采用SemVer：主版本表示不兼容变更，次版本表示兼容新功能，修订号表示兼容修复；alpha、beta、rc为预发布标识。0.2.5是开发阶段的纯云端调整。后续小修复使用0.2.6，较大新增功能使用0.3.0，功能与兼容约定稳定后使用1.0.0。已公开版本不替换内容。规范：https://semver.org/lang/zh-CN/
+版本采用SemVer：主版本表示不兼容变更，次版本表示兼容新功能，修订号表示兼容修复；alpha、beta、rc为预发布标识。0.2.5完成开发阶段的纯云端调整，0.2.6修复跨系统编码下的音频管道问题。后续小修复使用0.2.7，较大新增功能使用0.3.0，功能与兼容约定稳定后使用1.0.0。已公开版本不替换内容。规范：https://semver.org/lang/zh-CN/

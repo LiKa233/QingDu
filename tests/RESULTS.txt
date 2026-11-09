@@ -1,4 +1,4 @@
-Built QingDu 0.2.5 (Windows x64)
+Built QingDu 0.2.6 (Windows x64)
 PASS three default hotkeys
 PASS duplicate rejected and old binding retained
 PASS OS conflict rolls back without unregistering old binding
@@ -33,6 +33,7 @@ PASS sentence grouping conserves text and Unicode boundaries
 PASS sentence grouping conserves text and Unicode boundaries
 PASS sentence grouping conserves text and Unicode boundaries
 PASS sentence grouping conserves text and Unicode boundaries
+PASS UTF-8 console preamble never enters binary audio pipe
 PASS raw PCM decode exact duration
 PASS atempo duration and preserved pitch
 PASS rubberband pitch and preserved duration
@@ -66,7 +67,7 @@ PASS prompt HTTP cancellation
 PASS Fish streaming MP3 decode
 PASS Fish quota error
 PASS Fish never falls back to paid
-SUCCESS 67 assertions
+SUCCESS 68 assertions
 PASS DPAPI migration, private backup, default reset, cleanup boundary and retained user data
 PASS paused queue retained without replay or completion
 PASS resume drains the same queue exactly once

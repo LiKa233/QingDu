@@ -11,7 +11,7 @@ QingDu is distributed under GPL-3.0. Full license texts are in `licenses/`.
 
 FFmpeg Copyright (c) 2000-2026 the FFmpeg developers. Rubber Band Copyright (c) 2007-2023 Particular Programs Ltd and contributors. See their original source archives for all component-level notices, including the built-in FFT/resampler and bundled helper code. No modifications to upstream sources were made. `third_party/patches/README.md` records this fact.
 
-The separate `QingDu-v0.2.5-corresponding-source.zip` contains the exact FFmpeg/Rubber Band source archives, source hashes, build recipe, configuration and licenses for the shipped executable. The GitHub repository also contains those source archives. No source-code offer is substituted for the actual source delivery. GCC runtime redistribution relies on its runtime exception; Windows system DLLs and .NET Framework are system prerequisites and are not redistributed.
+The separate `QingDu-v0.2.6-corresponding-source.zip` contains the exact FFmpeg/Rubber Band source archives, source hashes, build recipe, configuration and licenses for the shipped executable. The GitHub repository also contains those source archives. No source-code offer is substituted for the actual source delivery. GCC runtime redistribution relies on its runtime exception; Windows system DLLs and .NET Framework are system prerequisites and are not redistributed.
 
 Build tooling (MSYS2, Meson, Ninja, compiler, NASM) is not shipped as an application runtime. Source provenance and toolchain inventory are in `third_party/BUILD.md` and `third_party/toolchain-packages.txt`. This application is independent of MiMo and Fish Audio; those names identify third-party services, whose own terms govern API use.
 

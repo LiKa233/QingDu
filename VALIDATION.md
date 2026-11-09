@@ -1,8 +1,8 @@
-# v0.2.5 validation — 2026-11-09
+# v0.2.6 validation — 2026-11-09
 
 Local verification on Windows x64:
 
-- 67 automated assertions passed for cloud-only defaults, all shortcut persistence, duplicate/OS-conflict rollback, modifier rejection, DPAPI, the9 MiMo presets, source-text conservation and Unicode-safe220-character splitting, PCM/MP3, atempo/rubberband, exact SSE assembly, streaming, HTTP errors, cancellations and sequential requests. All cloud requests in this suite use a loopback mock and synthetic content, never real credentials.
+- 68 automated assertions passed for cloud-only defaults, all shortcut persistence, duplicate/OS-conflict rollback, modifier rejection, DPAPI, the9 MiMo presets, source-text conservation and Unicode-safe220-character splitting, PCM/MP3, atempo/rubberband, exact SSE assembly, streaming, HTTP errors, cancellations and sequential requests. All cloud requests in this suite use a loopback mock and synthetic content, never real credentials.
 - Migration tests passed: two dummy DPAPI credentials, verified encrypted copies, preserved private settings backup, factory reset, explicit cleanup boundary, rejection of junctions and preservation of the junction target.
 - Real Windows audio checks passed with silent synthetic PCM: pause retains the queue, resume plays it once, an isolated helper session is ducked to20% and restored. These checks do not change unrelated media sessions.
 - The actual previous installation was upgraded successfully: both existing DPAPI credentials remained decryptable, factory parameters were restored, 19 legacy entries were removed within the installation boundary, and old local runtime directories are absent. Desktop/start-menu entries point to the current executable with the existing logo. Private backups remain outside the release tree.
@@ -12,3 +12,5 @@ Local verification on Windows x64:
 Release assembly requires complete binary/source pairing and scans the allowlisted directory and ZIP contents for credential-shaped text, encrypted-key filenames, personal-data filenames and machine user paths. SHA256SUMS.txt covers the three release ZIPs; FILES.sha256 inside the runtime covers the runtime files other than the manifest itself. Original upstream archives are retained with their exact known hashes.
 
 Limits: no fresh Windows10/11 virtual machine was available for a separate clean-OS installation test. The host has development tools; lack of Python/CUDA/model runtime dependencies is checked by code inspection, package inventory and executable imports rather than claiming an unperformed clean-VM test. Live vendor latency, charges and current voice quality are not measured by the mock suite. The binary is unsigned. Secret scanning is a defense against accidental inclusion, not proof that every possible encoded secret can be detected. GitHub Actions is provided but its remote result must be checked after the first push.
+
+The additional regression forces a BOM-emitting UTF-8 console encoding and verifies that the binary audio pipe still emits exactly 96000 bytes for a two-second PCM input. A current-user-only named byte pipe bypasses the Framework redirected-stdin text writer entirely; production code does not change console encodings. The v0.2.5 public tag remains unchanged; this correction is released as v0.2.6.
