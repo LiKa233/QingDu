@@ -1,0 +1,15 @@
+/build/
+/dist/
+/test-results/
+*.user
+*.suo
+*.pdb
+data/
+logs/
+settings.json
+*-key.bin
+*.tmp
+*.log
+.env
+.env.*
+!.env.example

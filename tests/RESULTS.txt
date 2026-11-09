@@ -1,0 +1,76 @@
+Built QingDu 0.2.5 (Windows x64)
+PASS three default hotkeys
+PASS duplicate rejected and old binding retained
+PASS OS conflict rolls back without unregistering old binding
+PASS successful hotkey replacement
+PASS independent editable Pause
+PASS independent editable Stop
+PASS modifier rejected 16
+PASS modifier rejected 17
+PASS modifier rejected 18
+PASS modifier rejected 91
+PASS modifier rejected 92
+PASS modifier rejected 160
+PASS modifier rejected 161
+PASS modifier rejected 162
+PASS modifier rejected 163
+PASS modifier rejected 164
+PASS modifier rejected 165
+PASS bare key rejected
+PASS registered ID resolves
+PASS all hotkeys released
+PASS factory defaults
+PASS all shortcuts survive reload
+PASS cloud-only configuration schema
+PASS fish DPAPI roundtrip without plaintext storage
+PASS mimo DPAPI roundtrip without plaintext storage
+PASS nine distinct MiMo presets
+PASS MiMo test endpoint restricted to loopback
+PASS Fish test endpoint restricted to loopback
+PASS unknown Fish model refused
+PASS sentence grouping conserves text and Unicode boundaries
+PASS sentence grouping conserves text and Unicode boundaries
+PASS sentence grouping conserves text and Unicode boundaries
+PASS sentence grouping conserves text and Unicode boundaries
+PASS sentence grouping conserves text and Unicode boundaries
+PASS raw PCM decode exact duration
+PASS atempo duration and preserved pitch
+PASS rubberband pitch and preserved duration
+PASS MP3 decoding and resampling
+PASS invalid MP3 rejected
+PASS audio decode cancellation
+PASS SSE odd chunks assembled exactly without silence
+PASS abnormal finish stops: length
+PASS abnormal finish stops: repetition_truncation
+PASS abnormal finish stops: content_filter
+PASS truncated SSE rejected
+PASS MiMo streaming speed 1
+PASS MiMo streaming speed 1.3
+PASS segment termination logged
+PASS segment termination logged
+PASS segment termination logged
+PASS segment termination logged
+PASS sequential complete segments, no repeat or fixed silence
+PASS stop cancels sequence
+PASS stop prevents next segment request
+PASS MiMo HTTP 401
+PASS no retry after HTTP failure
+PASS MiMo HTTP 402
+PASS no retry after HTTP failure
+PASS MiMo HTTP 429
+PASS no retry after HTTP failure
+PASS MiMo HTTP 503
+PASS no retry after HTTP failure
+PASS cancel pending HTTP
+PASS prompt HTTP cancellation
+PASS Fish streaming MP3 decode
+PASS Fish quota error
+PASS Fish never falls back to paid
+SUCCESS 67 assertions
+PASS DPAPI migration, private backup, default reset, cleanup boundary and retained user data
+PASS paused queue retained without replay or completion
+PASS resume drains the same queue exactly once
+PASS isolated audio session detected
+PASS duck only the synthetic helper session
+PASS media volume lowered to twenty percent
+PASS media volume restored

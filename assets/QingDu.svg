@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">轻读应用图标</title>
+  <desc id="desc">青蓝色圆角方形中，翻开的书页与三道声波组成朗读标志。</desc>
+  <defs>
+    <linearGradient id="tile" x1="48" y1="32" x2="464" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#178C9E"/>
+      <stop offset="1" stop-color="#123F68"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#tile)"/>
+  <path d="M96 155 C132 145 164 153 194 172 L194 340 C164 321 132 315 96 323 Z" fill="#FFFFFF"/>
+  <path d="M202 172 C228 154 254 150 282 157 L282 325 C252 317 226 323 202 340 Z" fill="#D7F7F2"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round">
+    <path d="M316 216 V272"/>
+    <path d="M354 190 V298"/>
+    <path d="M392 164 V324"/>
+  </g>
+</svg>
